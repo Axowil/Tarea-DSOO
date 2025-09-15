@@ -1,8 +1,8 @@
 public class Numeros {
-    private int numero;
+    
         
     public Numeros(int n) {
-        this.numero = n;  
+        
     }
 
     public static boolean esPrimo(int numero) {
