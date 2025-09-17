@@ -1,5 +1,4 @@
 public class Numeros {
-    
         
     public Numeros(int n) {
         
