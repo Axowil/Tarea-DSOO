@@ -6,14 +6,14 @@ public class ejercicio1 {
         
         Scanner sc = new Scanner(System.in);
 
-        //ejercicio 1 : 
+        //ejercicio 1 :
 
         System.out.println("Introducir los N numeros primos que quieras visualizar");
-
         int n = sc.nextInt();
 
-        Numeros ObjetoPrimos = new Numeros(n);
+        Numeros ObjetoPrimos = new Numeros();
 
+        //imprimision del objeto
         ObjetoPrimos.mostrarPrimosYSuma(n);
 
 

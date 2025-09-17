@@ -9,6 +9,8 @@ public class Edad {
     public Edad (String nombre , int Edad) {
         this.Nombre=nombre;
         this.Edad=Edad;
+
+    //contruccion de set y getters para el objeto
     }
     public void setEdad (int Edad) {
         this.Edad = Edad;
@@ -22,6 +24,7 @@ public class Edad {
     public String getNombre () {
         return Nombre;
     }
+    //Mostrar Resultado 
     public void mostrarResultado(){
         System.out.println("Nombre: " + Nombre + ", Edad: " + Edad);
     }

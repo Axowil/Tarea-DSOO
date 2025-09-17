@@ -4,17 +4,20 @@ public class Personas {
     private int Dni ;
     private int Cui ;
 
-    //con contructor
+    //con contructor 
     public Personas (String nombre , int Dni , int Cui) {
         this.nombre = nombre;
         this.Dni = Dni;
         this.Cui = Cui;
     }
+    //mostrar los resultados
     public void mostrarDatos () {
         System.out.println("Nombre: " + nombre);
         System.out.println("DNI: " + Dni);
         System.out.println("CUI: " + Cui);
     }
+
+    //metodos de set y geters 
     public String getNombre() {
         return nombre;
     }

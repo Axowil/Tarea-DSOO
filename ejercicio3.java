@@ -4,6 +4,8 @@ import java.util.Scanner;
 public class ejercicio3 {
     public static void main(String[] args) {
 
+        //declaracion de variables y creacion de un array de objetos
+
         String Nombre ; 
         int Edad ;
 
@@ -14,6 +16,9 @@ public class ejercicio3 {
         System.out.println();
 
         Edad [] arrayEdads = new Edad[numeroAmigos];
+
+
+        //Introducir los datos para almacenarlos
 
         for(int i = 0 ; i<numeroAmigos;i++){
             
@@ -28,6 +33,8 @@ public class ejercicio3 {
             arrayEdads[i]=new Edad(Nombre,Edad);
         }
 
+        //Impresion del de mayor edad
+
         Edad personaMayor = encontrarMayorEdad(arrayEdads);{
         System.out.println("\nLa persona de mayor edad es:");
         personaMayor.mostrarResultado();
@@ -35,6 +42,7 @@ public class ejercicio3 {
         sc.close();
         }
     }
+        //un metodo para buscar el de mayor edad 
     public static Edad encontrarMayorEdad(Edad[] personas){
         Edad mayor = personas[0];
         for (int i = 1; i < personas.length; i++) {

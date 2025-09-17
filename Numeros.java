@@ -1,9 +1,10 @@
 public class Numeros {
-        
-    public Numeros(int n) {
-        
+
+    //Sin contruccion de parametros
+    public Numeros() {
     }
 
+    //Un booleano para reconocer si es un numero primo
     public static boolean esPrimo(int numero) {
         if (numero <= 1) {
             return false;
@@ -22,7 +23,7 @@ public class Numeros {
         }
         return true;
     }
-    
+    //para mostrar el resultado
     public void mostrarPrimosYSuma(int n) {
         int contador = 0;
         int num = 2; 

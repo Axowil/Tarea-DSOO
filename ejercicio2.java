@@ -11,6 +11,7 @@ public class ejercicio2 {
         int N = sc.nextInt();
         sc.nextLine();
 
+        //creacion de un array para objetos 
         Personas [] arrayPersonas = new Personas[N];
         
         for (int i = 0; i < N; i++) {
@@ -23,12 +24,16 @@ public class ejercicio2 {
             System.out.print("CUI: ");
             int cui = sc.nextInt();
             sc.nextLine(); 
+
+        //Agregacion de sus Atributos a cada array 
         
         arrayPersonas[i] =new Personas(nombre, dni, cui);
 
         }
         System.out.println();
         System.out.println("Personas registrados : \n" );
+
+        //creacion de un objeto persona para mostrar toda la lista
 
         for (Personas persona : arrayPersonas) {
             persona.mostrarDatos();
